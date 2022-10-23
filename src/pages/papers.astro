@@ -1,0 +1,16 @@
+---
+// Component Imports
+import Button from '../components/Button.astro'
+import Article from '../layouts/Article.astro'
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+
+const headerTitle = 'Hi, this is a test '
+---
+
+<Article>
+  <p><a href='/'>Home</a>!</p>
+  <h1 class='text-2x1 underline'>{headerTitle}</h1>
+  <Button>Click Me!</Button>
+</Article>

@@ -1,0 +1,25 @@
+---
+// Component Imports
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+
+const title = 'Astro + TailwindCSS'
+---
+
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <link rel='icon' type='image/x-icon' href='/favicon.ico' />
+    <title>{title}</title>
+  </head>
+
+  <body>
+    <Header />
+    <section class='mt-20'>
+      <slot />
+    </section>
+    <Footer />
+  </body>
+</html>

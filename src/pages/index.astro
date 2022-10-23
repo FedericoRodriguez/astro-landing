@@ -1,0 +1,25 @@
+---
+// Component Imports
+import Home from '../layouts/Home.astro'
+import WindowButton from '../components/WindowButton.astro'
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+const headerTitle = 'Home '
+---
+
+<Home>
+  <p>Papers <a href='/papers/'>Click</a>!</p>
+  <h1 class='text-2x1 underline'>{headerTitle}</h1>
+  <section class='px-10 flex items-center justify-center'>
+    <div
+      class='mx-auto w-full max-w-3xl border-2 border-gray-900 rounded-lg h-40'
+    >
+      <header class='bg-gray-900 h-8 w-full flex space-x-1.5 items-center px-2'>
+        <WindowButton action='close' />
+        <WindowButton action='minimaize' />
+        <WindowButton action='maximaize' />
+      </header>
+    </div>
+  </section>
+</Home>
